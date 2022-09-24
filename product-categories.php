@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 $client = new Client([
         'base_uri' => 'https://dummyjson.com/'
 ]);
-        $response = $client->get('https://dummyjson.com/products/categories/laptop');
+        $response = $client->get('https://dummyjson.com/products/category/smartphones');
         $code = $response->getStatusCode();
         $body = $response->getBody();
         $products = json_decode($body, true);
